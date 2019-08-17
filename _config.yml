@@ -1,1 +1,22 @@
 theme: jekyll-theme-tactile
+permalink: /:categories/:title
+name: Sissi Cao's Home Page
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  gfm_quirks: paragraph_end
+highlighter: rouge
+data_format: "ordinal"
+subscribe_rss: /atom.xml
+encoding: utf-8
+sass:
+    style: compressed
+    sass_dir: _sass
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-watch
+  - jemoji
