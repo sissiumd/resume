@@ -41,6 +41,7 @@
   body, #container {
     background: initial;
     font-family: "lato", san-serif;
+    font-weight: 100;
   }
   header {
     display: none;
@@ -56,7 +57,7 @@
     font-size: 1.25em;
   }
   a {
-    color: #101010;
+    color: #808080;
   }
   #main_content {
     display: flex;
@@ -77,6 +78,7 @@
   }
   p {
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 100;
+    font-family: "lato", san-serif;
   }
 </style>
