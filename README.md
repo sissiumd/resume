@@ -1,9 +1,9 @@
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 
+![bio](./bio.JPG)
 
 <div class="opening">
-  ![bio](./bio.JPG)
   <p>New York-based journalist covering tech, investment, entrepreneurship, social media, and art. </p>
 </div>
 
@@ -55,9 +55,12 @@
     width: 960px;
   }
   .opening {
+    position: absolute;
     width: 200px;
+    left: 0;
+    top: 250px;
   }
-  .opening img {
+  img {
     width: 200px;
     border-radius: 3px;
   }
@@ -69,6 +72,7 @@
   }
   #main_content {
     display: flex;
+    position: relative;
   }
   #main_content > p {
     display: inline-block;
