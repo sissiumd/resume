@@ -58,8 +58,13 @@
     position: absolute;
     width: 200px;
     left: 0;
-    top: 250px;
+    top: 275px;
   }
+  
+  .opening p{
+  color: #333333;
+  }
+  
   img {
     width: 200px;
     border-radius: 3px;
@@ -90,7 +95,7 @@
   }
   p {
     margin-bottom: 20px;
-    font-weight: 100;
+    font-weight: 200;
     font-family: "lato", sans-serif;
   }
 </style>
