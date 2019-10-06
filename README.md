@@ -1,6 +1,11 @@
+<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=lato">
+
 ![bio](./bio.JPG)
 
-<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=lato">
+<div class="opening">
+  <p>New York-based journalist covering tech, investment, entrepreneurship, social media, and art. </p>
+  
+</div>
 
 <div class="works">
   <h2 id="feature-work"><a class="headerlink" href="#feature-work" title="Permanent link"></a></h2>
@@ -80,5 +85,10 @@
     margin-bottom: 20px;
     font-weight: 100;
     font-family: "lato", sans-serif;
+  }
+  
+  .opening{
+    width:200px;
+    
   }
 </style>
