@@ -1,10 +1,10 @@
-<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=lato">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-![bio](./bio.JPG)
+
 
 <div class="opening">
+  ![bio](./bio.JPG)
   <p>New York-based journalist covering tech, investment, entrepreneurship, social media, and art. </p>
-  
 </div>
 
 <div class="works">
@@ -54,7 +54,10 @@
   .inner {
     width: 960px;
   }
-  img {
+  .opening {
+    width: 200px;
+  }
+  .opening img {
     width: 200px;
     border-radius: 3px;
   }
@@ -85,10 +88,5 @@
     margin-bottom: 20px;
     font-weight: 100;
     font-family: "lato", sans-serif;
-  }
-  
-  .opening{
-    width:200px;
-    
   }
 </style>
