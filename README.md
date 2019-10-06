@@ -57,7 +57,7 @@
     font-size: 1.25em;
   }
   a {
-    color: #808080;
+    color: #666666;
   }
   #main_content {
     display: flex;
@@ -71,7 +71,7 @@
     margin-left: 40px;
   }
   h2, h3, h4 {
-    color: #111;
+    color: #262626;
   }
   h3 {
     margin: 1em 0;
