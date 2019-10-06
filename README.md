@@ -40,7 +40,7 @@
 <style>
   body, #container {
     background: initial;
-    font-family: "lato", san-serif;
+    font-family: "lato", sans-serif;
     font-weight: 100;
   }
   header {
@@ -79,6 +79,6 @@
   p {
     margin-bottom: 20px;
     font-weight: 100;
-    font-family: "lato", san-serif;
+    font-family: "lato", sans-serif;
   }
 </style>
