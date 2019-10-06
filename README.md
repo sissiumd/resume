@@ -1,8 +1,9 @@
 ![bio](./bio.JPG)
 
+<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=lato">
 
 <div class="works">
-  <h2 id="feature-work">Feature Work<a class="headerlink" href="#feature-work" title="Permanent link"></a></h2>
+  <h2 id="feature-work"><a class="headerlink" href="#feature-work" title="Permanent link"></a></h2>
   <h3 id="featureqa">Feature/Q&amp;A<a class="headerlink" href="#featureqa" title="Permanent link"></a></h3>
   <p><a href="https://observer.com/2018/11/alexis-ohanian-reddit-cofounder-interview/">Reddit Cofounder Alexis Ohanian: Building a Tech Company Without an STEM Degree</a></p>
   <p><a href="https://observer.com/2018/10/kai-fu-lee-google-china-tech-advancements/">Former Google China President Kai-Fu Lee: Will China’s Tech Boom Take Over Silicon Valley?</a></p>
@@ -39,7 +40,7 @@
 <style>
   body, #container {
     background: initial;
-    font-family: Georgia,Times New Roman,Times,serif;
+    font-family: "lato", san-serif;
   }
   header {
     display: none;
