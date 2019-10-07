@@ -93,6 +93,7 @@
   }
   h3 {
     margin: 1em 0;
+    font-style:bold;
   }
   p {
     margin-bottom: 20px;
