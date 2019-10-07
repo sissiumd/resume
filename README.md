@@ -89,6 +89,7 @@
   }
   h2, h3, h4 {
     color: #262626;
+    font-style:bold;
   }
   h3 {
     margin: 1em 0;
