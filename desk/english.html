@@ -1,0 +1,265 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<title>Sissi's Desk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!--display chinese-->
+<!-- Add jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+<!--google fonts-->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+
+<script>
+(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(".fancybox").fancybox({
+   nextMethod : 'resizeIn',
+   nextSpeed  : 100,     
+   prevMethod : false,
+   padding : 0,
+   easingIn: 'easeInSine',
+   easingOut: 'easeOutSine',
+   loop: false,
+   arrows:false,
+   afterClose : function() {
+        location.reload();
+        return;
+    },
+   helpers : {
+        overlay : {
+            css : {
+                'background' : 'rgba(0, 0, 0, 0.8)'
+            },
+            locked:false
+        
+        },
+         title: {
+            type: 'outside'
+        }
+    }
+        
+});
+
+    
+</script>
+
+
+<style>
+.icon{
+opacity: 1;
+max-width:40px;
+}
+
+.hovercircle{
+opacity:0;
+max-width:40px;
+}
+
+body{
+margin:auto;
+margin-top:0px;
+position: relative;
+background-color:	 #000;
+max-width:1800px;
+}
+
+.container{
+position:relative;
+display:inline;
+}
+
+
+.headline{
+margin:auto;
+margin-bottom:20px;
+}
+
+h1{
+color:  #ff3300;
+font-size:40px;
+letter-spacing: 4px;
+margin:auto;
+text-align:center;
+font-family: "STHeiti";
+padding-top:50px;
+}
+
+
+#dog, #hoverdog{
+position:absolute;
+top:72%;
+left:30%;
+
+}
+
+#china, #hoverchina{
+position:absolute;
+top:70%;
+left:40%;
+}
+
+#stone, #hoverstone{
+position:absolute;
+top:78%;
+left:20%;
+}
+
+#mug, #hovermug{
+position:absolute;
+top:70%;
+left:70%;
+}
+
+#paint1, #hoverpaint1{
+position:absolute;
+top:24%;
+left:30%;
+}
+
+#paint2, #hoverpaint2{
+position:absolute;
+top:23%;
+left:48%;
+}
+
+#paint3, #hoverpaint3{
+position:absolute;
+top:24%;
+left:65%;
+}
+
+#desk{
+width:100%;
+}
+
+.fancybox-title {
+text-align: center;
+height:80px;
+padding-top:20px;
+font-size:14px;
+}
+
+
+.icon{
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+}
+
+a, .hovercircle{
+ -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  }
+  
+h5{
+ -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+}
+h5:hover{
+color:#ff5c33;
+}
+
+#stone:hover, #dog:hover{
+opacity:0;
+}
+
+#hoverstone:hover, #hoverdog:hover, #hoverchina:hover, #hovermug:hover, #hoverpaint1:hover, #hoverpaint2:hover, #hoverpaint3:hover, .hovercircle:hover{
+opacity:0.8;
+}
+
+
+h5{
+font-family:"Lato","sans-serif";
+color: #b3b3b3;
+font-size:14px;
+font-weight:400;
+margin: 20px 20px;
+}
+
+@media screen and (max-width: 580px) {
+.icon, .hovercircle{
+max-width:20px;
+}
+
+h1{
+font-size:24px;
+padding-top:20px;
+letter-spacing:1px;
+}
+
+
+}
+</style>
+
+</head>
+
+<body>
+<!--chinese font: http://www.im87.cn/blog/10-03/cssshe-zhi-zhong-wen-zi-ti-font-familyhei-ti-hou-yang-shi-shi-xiao-wen-ti-->
+
+
+<div class="headline">
+	<a class="language" href="http://www.sissicao.com/desk/mydesk-chinese" target="_blank"><h5>中文</h5></a>
+		<h1>What's On My Desk</h1>
+	</div>
+	
+	<div class="container">
+
+<img class="icon" id="stone" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" data-fancybox-title="I bought this hand-carved stone box about 10 years ago in Shanghai. After years of moving from place to place, I don’t keep a lot of things from older days, but this is one of the few." href="stone.jpg"><img class="hovercircle" id="hoverstone" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="dog" src="whitecircle.png"/>
+<a rel="gallery" id="hoverdog" class="fancybox" data-fancybox-title="My friend Lynn gave this mini-Bailey to me as a present. It’s custom made after a picture of Bailey in the exact green shirt when she was still a puppy." href="dog.jpg"><img class="hovercircle" src="blackcircle.png"/></a>
+
+<img class="icon" id="china" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverchina" data-fancybox-title="This antique porcelain jug was made circa 1875 to 1908 during China’s Qing Dynasty. Besides the super old rental house I live in now, which was built in 1905, this could be the oldest thing I own." href="china.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="mug" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hovermug" data-fancybox-title="This Urban Outfitters mug is one of the many mugs laying around the house, but found its way to be my go-to morning coffee mug. I guess nothing cheers me up more than a puppy saying “It will all be okay” to start the day." href="mug.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="paint1" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverpaint1" data-fancybox-title="A print of Chinese artist Liu Ye’s “Ruan Lin Yu” (a famous 1930s actress) series. I framed two pieces of this series because the royal blue theme matches my curtain, and is just captivating on its own." href="ruan1.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="paint2" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverpaint2" data-fancybox-title="A second print of the “Ruan Lin Yu” series."  href="ruan.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="paint3" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverpaint3" data-fancybox-title="A post card I bought from a gallery in Tokyo when I traveled there. I think the blue blends well with its surrounding." href="paint3.jpg">
+<img class="hovercircle" src="blackcircle.png"/></a>
+
+<a rel="gallery" class="fancybox" id="last" data-fancybox-title="" href="">
+<img class="hovercircle" src="blackcircle.png"/></a>
+
+
+    <img id="desk" src="desk.jpg">
+</div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!--display chinese-->
+<!-- Add jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+<!--google fonts-->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+
+
+
+<script>
+(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(".fancybox").fancybox({
+   nextMethod : 'resizeIn',
+   nextSpeed  : 100,     
+   prevMethod : false,
+   padding : 0,
+   easingIn: 'easeInSine',
+   easingOut: 'easeOutSine',
+   loop: false,
+   afterClose : function() {
+        location.reload();
+        return;
+    },
+   helpers : {
+        overlay : {
+            css : {
+                'background' : 'rgba(0, 0, 0, 0.8)'
+            },
+            locked:false
+        
+        },
+         title: {
+            type: 'outside'
+        }
+    }
+        
+});
+
+
+    
+</script>
+
+
+<style>
+.icon{
+opacity: 1;
+max-width:60px;
+}
+
+.hovercircle{
+opacity:0;
+max-width:40px;
+}
+
+body{
+margin:auto;
+margin-top:0px;
+position: relative;
+background-color:	 #000;
+max-width:1800px;
+}
+
+.container{
+position:relative;
+display:inline;
+}
+
+
+.headline{
+margin:auto;
+margin-bottom:20px;
+}
+
+h1{
+color:  #ff3300;
+font-size:40px;
+letter-spacing: 4px;
+margin:auto;
+text-align:center;
+font-family: "STHeiti";
+padding-top:50px;
+}
+
+
+#dog, #hoverdog{
+position:absolute;
+top:72%;
+left:30%;
+
+}
+
+#china, #hoverchina{
+position:absolute;
+top:70%;
+left:40%;
+}
+
+#stone, #hoverstone{
+position:absolute;
+top:78%;
+left:20%;
+}
+
+#mug, #hovermug{
+position:absolute;
+top:70%;
+left:70%;
+}
+
+#paint1, #hoverpaint1{
+position:absolute;
+top:24%;
+left:30%;
+}
+
+#paint2, #hoverpaint2{
+position:absolute;
+top:23%;
+left:48%;
+}
+
+#paint3, #hoverpaint3{
+position:absolute;
+top:24%;
+left:65%;
+}
+
+#desk{
+width:100%;
+}
+
+.fancybox-title {
+text-align: center;
+height:80px;
+padding-top:20px;
+font-size:14px;
+}
+
+
+.icon{
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+}
+
+a, .hovercircle{
+ -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  }
+  
+h5{
+ -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+}
+h5:hover{
+color:#ff5c33;
+}
+
+#stone:hover, #dog:hover{
+opacity:0;
+}
+
+#hoverstone:hover, #hoverdog:hover, #hoverchina:hover, #hovermug:hover, #hoverpaint1:hover, #hoverpaint2:hover, #hoverpaint3:hover, .hovercircle:hover{
+opacity:0.8;
+}
+
+
+h5{
+font-family:"Lato","sans-serif";
+color: #b3b3b3;
+font-size:14px;
+font-weight:400;
+margin: 20px 20px;
+}
+
+@media screen and (max-width: 580px) {
+.icon, .hovercircle{
+max-width:20px;
+}
+
+h1{
+font-size:30px;
+padding-top:20px;
+}
+
+
+}
+</style>
+
+</head>
+
+<body>
+<!--chinese font: http://www.im87.cn/blog/10-03/cssshe-zhi-zhong-wen-zi-ti-font-familyhei-ti-hou-yang-shi-shi-xiao-wen-ti-->
+
+
+	<div class="headline">
+		<a class="language" href="http://www.sissicao.com/desk/english" target="_blank"><h5>English</h5></a>
+	
+		<h1>我的书桌</h1>
+	</div>
+	
+	<div class="container">
+
+<img class="icon" id="stone" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" data-fancybox-title="很多年前在上海进贤路一个泰国手工艺品店里买的石刻小盒。我并不爱留许多没用的纪念品，没想到这件小东西却百看不厌。" href="stone.jpg"><img class="hovercircle" id="hoverstone" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="dog" src="whitecircle.png"/>
+<a rel="gallery" id="hoverdog" class="fancybox" data-fancybox-title="Lynn送我的特制小西公仔，比照的还是两岁时候的样子。平时呆在抽屉里，偶尔出来晒晒太阳。" href="dog.jpg"><img class="hovercircle" src="blackcircle.png"/></a>
+
+<img class="icon" id="china" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverchina" data-fancybox-title="光绪年间的冰梅罐。带盖子的特别少见，可能是我拥有的年纪最大的东西。" href="china.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="mug" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hovermug" data-fancybox-title="在Urban Outfitters买的咖啡杯，容量刚好不多不少，是早餐使用率最高的杯子。" href="mug.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="paint1" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverpaint1" data-fancybox-title="刘野作品“阮玲玉”系列之一（印刷品）。很迷这个宝蓝色调子，又刚好和窗帘呼应。" href="ruan1.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="paint2" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverpaint2" data-fancybox-title="刘野作品“阮玲玉”系列之二（印刷品）"  href="ruan.jpg"><img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<img class="icon" id="paint3" src="whitecircle.png"/>
+<a rel="gallery" class="fancybox" id="hoverpaint3" data-fancybox-title="在东京出光美术馆买的元青花大罐“昭君出塞”明信片。去日本时慕名参观，可惜东西没出展，只好带张照片回来。" href="paint3.jpg">
+<img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+<a rel="gallery" class="fancybox" id="paint4" caption="" href="">
+<img class="hovercircle" src="blackcircle.png" alt=""/></a>
+
+    <img id="desk" src="desk.jpg">
+	</div>
+<!--close bigcontainer-->
+</body>
+</html>
