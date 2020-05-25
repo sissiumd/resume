@@ -3,7 +3,7 @@
   
 ![bio](./bio.JPG)
 
-<div class="opening authorname">
+<div class="authorname">
   SISSI CAO
 </div>
 
@@ -74,8 +74,13 @@
   }
   
   .authorname {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 275px;
     font-size: 20px;
     font-weight: 200;
+    
  } 
   .opening p{
   color: #333333;
