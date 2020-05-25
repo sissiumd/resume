@@ -19,7 +19,7 @@
   <p><a href="https://observer.com/2018/10/kai-fu-lee-google-china-tech-advancements/">Former Google China President Kai-Fu Lee: Will China’s Tech Boom Take Over Silicon Valley?</a></p>
   <p><a href="https://observer.com/2019/06/tesla-spacex-elon-musk-ceo-compensation-analysis/">Is Elon Musk a Broke Billionaire? A Detailed Look Into How He Makes and Spends Money</a></p>
   <p><a href="https://observer.com/2018/10/sophia-amoruso-girlboss-nasty-gal/">Q&A With Nasty Gal Founder Sophia Amoruso: The Comeback of ‘Girlboss’</a></p>
-  <p><a href="https://observer.com/2019/01/how-saudi-arabia-crown-prince-mbs-rose-to-power/">Visual Explainer: How Saudi Arabia’s 33-Year-Old Crown Prince MBS Rose to Power</a></p>
+ 
   
   <h3 id="economyfinance">Economy/Finance<a class="headerlink" href="#economyfinance" title="Permanent link"></a></h3>
   <p><a href="https://observer.com/2018/05/chicken-crucial-to-us-china-trade-talks/">How Chicken Feet Became a Crucial Item in US-China Trade Talks</a></p>
@@ -39,12 +39,19 @@
   <p><a href="https://observer.com/2019/06/christies-asia-chief-rebecca-wei-china-art-collector-auction/">Christie’s Asia Chief Reveals What China’s ‘New Rich’ Art Collectors Are Buying</a></p>
   <p><a href="https://observer.com/2019/03/meural-vlad-vukicevic-jerry-hu-interview-smart-art-frame-digital-revolution/">Is Fine Art Overdue for a Digital Revolution? Q&amp;A With the Founders of Meural</a></p>
   <p><a href="https://observer.com/2019/07/art-investing-fine-art-group-ceo-philip-hoffman-interview/">Decoding the Inexact Science of Buying Art: Q&amp;A With Fine Art Group CEO Philip Hoffman</a></p>
-  <p><a href="https://observer.com/2019/05/artsy-ceo-carter-cleveland-startup-art-interview/">Q&amp;A With Artsy CEO Carter Cleveland: The ‘Dorm Room’ Startup That Charmed the Art World</a></p>
   <h3 id="culturelifestyle">Lifestyle<a class="headerlink" href="#culturelifestyle" title="Permanent link"></a></h3>
   <p><a href="https://observer.com/2018/11/downton-abbey-highclere-castle-owners-carnavorn/">Meet the Real Owners of ‘Downton Abbey,’ Highclere Castle’s Lord and Lady Carnarvon</a></p>
   <p><a href="https://observer.com/2018/07/flex-startup-period-sex-tampon-alternative/">This Startup Encourages Period Sex With a Tampon Alternative</a></p>
   <p><a href="https://observer.com/2019/11/exclusive-rebecca-minkoff-reveals-her-ideal-look-for-millennial-women/">Rebecca Minkoff Reveals Her ‘Ideal Look’ for Millennial Women</a></p>
   <p><a href="https://observer.com/2019/05/qa-senreve-ceo-coral-chung-how-an-instagram-famous-bag-redefines-luxury/">Senreve CEO Coral Chung Interview: How an Instagram-Famous Handbag Redefined Luxury</a></p>
+
+  <h3 id="visualization">Data Visualization<a class="headerlink" href="#economyfinance" title="Permanent link"></a></h3>
+    <p><a href="https://cnsmaryland.org/interactives/fall-2015-2/self-driving-car-12-15/index.html">Full Web Design Package: Self-Driving Cars Are the (Probably Distant) Future </a></p>
+    <p><a href="https://observer.com/2019/01/how-saudi-arabia-crown-prince-mbs-rose-to-power/">Infographics: How Saudi Arabia’s 33-Year-Old Crown Prince MBS Rose to Power</a></p>
+    <p><a href="https://www.thetrustedinsight.com/investment-news/20-largest-sovereign-wealth-funds-in-asia-pacific-20160713942/">Infographics: 20 Largest Sovereign Wealth Funds In Asia-Pacific</a></p>
+    <p><a href="">D3 Animation: The 14-Billion Year Lifecycle of the Sun</a></p>
+    
+
 </div>
 
 <style>
