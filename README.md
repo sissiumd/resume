@@ -42,9 +42,9 @@
   <p><a href="https://observer.com/2019/05/artsy-ceo-carter-cleveland-startup-art-interview/">Q&amp;A With Artsy CEO Carter Cleveland: The ‘Dorm Room’ Startup That Charmed the Art World</a></p>
   <h3 id="culturelifestyle">Lifestyle<a class="headerlink" href="#culturelifestyle" title="Permanent link"></a></h3>
   <p><a href="https://observer.com/2018/11/downton-abbey-highclere-castle-owners-carnavorn/">Meet the Real Owners of ‘Downton Abbey,’ Highclere Castle’s Lord and Lady Carnarvon</a></p>
-  <p><a href="https://observer.com/2019/05/qa-senreve-ceo-coral-chung-how-an-instagram-famous-bag-redefines-luxury/">Senreve CEO Coral Chung Interview: How an Instagram-Famous Handbag Redefined Luxury</a></p>
-  <p><a href="https://observer.com/2018/04/zac-posen-fashion-artificial-intelligence/">Zac Posen Discusses Fashion in the Era of Artificial Intelligence</a></p>
   <p><a href="https://observer.com/2018/07/flex-startup-period-sex-tampon-alternative/">This Startup Encourages Period Sex With a Tampon Alternative</a></p>
+  <p><a href="https://observer.com/2019/11/exclusive-rebecca-minkoff-reveals-her-ideal-look-for-millennial-women/">Rebecca Minkoff Reveals Her ‘Ideal Look’ for Millennial Women</a></p>
+  <p><a href="https://observer.com/2019/05/qa-senreve-ceo-coral-chung-how-an-instagram-famous-bag-redefines-luxury/">Senreve CEO Coral Chung Interview: How an Instagram-Famous Handbag Redefined Luxury</a></p>
 </div>
 
 <style>
