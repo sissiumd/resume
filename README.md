@@ -70,7 +70,7 @@
     position: absolute;
     width: 200px;
     left: 0;
-    top: 275px;
+    top: 350px;
   }
   
   .authorname {
