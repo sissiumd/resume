@@ -1,14 +1,16 @@
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+<div class="l-panel">
+  ![bio](./bio.JPG)
   
-![bio](./bio.JPG)
+  <div class="authorname">
+    Sissi Cao (曹希)
+  </div>
 
-<div class="authorname">
-  Sissi Cao (曹希)
-</div>
+  <div class="opening">
+    <p>New York-based journalist covering entrepreneurship, technology, economy, finance and (occasionally) art. </p>
+  </div>
 
-<div class="opening">
-  <p>New York-based journalist covering entrepreneurship, technology, economy, finance and (occasionally) art. </p>
 </div>
 
 <div class="works">
@@ -66,6 +68,9 @@
   }
   .inner {
     width: 960px;
+  }
+  .l-panel > p {
+    margin-top: 13px;
   }
   .opening {
     position: absolute;
