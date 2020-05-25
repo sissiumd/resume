@@ -81,6 +81,7 @@
     top: 275px;
     font-size: 20px;
     font-weight: 200;
+    color: #333333;
     
  } 
   .opening p{
