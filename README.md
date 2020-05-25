@@ -73,17 +73,11 @@
     margin-top: 13px;
   }
   .opening {
-    position: absolute;
     width: 200px;
-    left: 0;
-    top: 310px;
   }
   
   .authorname {
-    position: absolute;
     width: 200px;
-    left: 0;
-    top: 275px;
     font-size: 20px;
     font-weight: 200;
     color: #333333;
