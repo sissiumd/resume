@@ -4,7 +4,7 @@
 ![bio](./bio.JPG)
 
 <div class="authorname">
-  SISSI CAO
+  Sissi Cao (曹希)
 </div>
 
 <div class="opening">
@@ -71,7 +71,7 @@
     position: absolute;
     width: 200px;
     left: 0;
-    top: 300px;
+    top: 310px;
   }
   
   .authorname {
