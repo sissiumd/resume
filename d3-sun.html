@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <!--this library link enables multi-step transition-->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <style>
+    .container{
+    background:url(http://wallpapercave.com/wp/pEeUsp1.jpg);
+    background-size:100%;
+    width:850px;
+    height:500px;
+    margin-top:50px;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    }
+    
+    .axis path, .axis line {
+    	fill: none;
+    	stroke: aliceblue;
+    	shape-rendering: crispEdges;
+			}
+    
+    h3{
+    font-family:sans-serif;
+    font-size:24px;
+    color:#fff;
+    margin-left:40px;
+    }
+    
+    h4{
+    font-family:"lato",sans-serif;
+    font-size:14px;
+    font-weight:300;
+    color:aliceblue;
+    margin-left:50px;
+    margin-top:-30px;
+    }
+    
+    p{
+    
+    font-family:sans-serif;
+    font-size:16px;
+    color:aliceblue;
+    margin-bottom:20px;
+    margin:auto;
+    }
+    
+    </style>
+    
+</head>
+<body>
+<div class="container">
+	<h3>LIFECYCLE OF THE SUN</h3>
+	
+<div class="graphic">
+
+ <script>
+ var w = 800;
+ var h = 400;
+ 
+ var padding = 50;
+ 
+ var canvas=d3.select(".graphic")
+ 			  .append("svg")
+ 			  .attr("height",h)
+ 			  .attr("width",w);
+ 
+ //color
+ var radialGradient = canvas.append("defs")
+    .append("radialGradient")
+    .attr("id", "radial-gradient");
+
+	radialGradient.append("stop")
+    .attr("offset", "5%")
+    .attr("stop-color", "#ffcc99");//pale orange
+
+	radialGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#000");
+ 
+var orange = radialGradient.select("stop")
+			  .transition()
+			  .duration(1000)
+			  .delay(2000)
+			  .attr("offset", "50%")
+			  .attr("stop-color","#ffa64d");//orange
+    
+var red = orange.transition()
+			  .duration(1000)
+			  .delay(11000)
+			  .attr("stop-color","red");
+
+var graycloud = red.transition()
+			  .duration(1000)
+			  .delay(14000)
+			  .attr("offset", "20%")
+			  .attr("stop-color","#ccc");
+
+var dwarf = graycloud.transition()
+			  .duration(1000)
+			  .delay(16000)
+			  .attr("offset", "100%")
+			  .attr("stop-color","#ccc");			  
+			  
+//circle    
+ var circle = canvas.append("circle")
+        .style("stroke", "none")
+        .style("fill", "url(#radial-gradient)")
+        .attr("r", 80)
+        .attr("cx", 50)
+        .attr("cy", 250)
+ 
+ var b0 = circle.transition()
+ 		.duration(1000)
+ 	    .delay(2000)
+ 	    .attr("r", 20)
+ 	    .attr("cx",100);
+ 	    
+ var b1 = b0.transition()
+ 	   .attr("cx",150);
+ 
+ var b2 = b1.transition()
+ 	   .attr("cx",200);
+ 
+ var b3 = b2.transition()
+ 	   .attr("cx",250);
+ 
+ var b4 = b3.transition()
+ 	   .attr("cx",300);
+ 	   
+ var b5 = b4.transition()
+ 	   .attr("cx",350)
+ 	   .attr("r",22);
+           
+ var b6 = b5.transition()
+ 	   	.attr("cx",400)
+ 	   	.attr("r",24);
+ 
+ var b7 = b6.transition()
+ 	   	.attr("cx",450)
+ 	   	.attr("r",26);
+ 	   	
+ var b8 = b7.transition()
+ 	   	.attr("cx",500)
+ 	   	.attr("r",28);
+
+//red giant 
+ var b9 = b8.transition()
+ 		.duration(2000)
+ 	   	.attr("cx",550)
+ 	   	.attr("r",90);
+ 	   	
+ 	   	
+  var b10 = b9.transition()
+  		.duration(2000)
+ 	   	.attr("cx",600)
+ 	   	.attr("r",45);
+ 	   	
+   var b11 = b10.transition()
+ 	   	.duration(2000)
+ 	   	.attr("cx",650)
+ 	   	.attr("r",10);
+ 	     		
+   var b12 = b11.transition()
+ 	   	.attr("cx",700);
+ 	   	
+   var b13 = b12.transition()
+ 	   	.attr("cx",750);
+
+//Axis 	
+  var dataset = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];  	
+ 
+    var xScale = d3.scale.linear()
+                .domain([0, 14])
+                .range([50, w-padding]);
+                     
+    var xAxis = d3.svg.axis()
+                  .scale(xScale)
+                  .orient("bottom")
+                  .ticks(13)
+                  .tickSize(-8,0);//control tick direction
+                  
+     canvas.selectAll("text")
+   	 	.data(dataset)
+   		.enter()
+   		.append("text")  
+   		.text("now")
+   		.attr("x",255)
+   		.attr("y",130)
+   		.attr("font-family", "lato")
+   		.attr("font-size", "20px")
+  		.attr("fill", "red");
+  	
+  	
+  	 canvas.append("line")
+  	 .attr("x1","275")
+  	 .attr("y1","150")
+  	 .attr("x2","275")
+  	 .attr("y2","350")
+  	 .attr("stroke-width","2px")
+  	 .attr("stroke","#ccc");
+  	 
+  	 	
+     canvas.append("g")
+    .attr("class", "axis")  //Assign "axis" class. style in head style tags
+    .attr("transform","translate(0, "+(h - padding) +")")
+    .call(xAxis)
+    .style("fill","#fff")
+    .style("font-family","sans-serif")
+    .style("font-size","13px");
+ 	   	
+ 	   	
+ </script>
+ </div>
+ 	<h4>(in billions of years)</h4>
+ </div>
+</body>
+</html>
