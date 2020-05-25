@@ -1,10 +1,12 @@
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-
+<div class="opening">
+  SISSI CAO
+</div>  
 ![bio](./bio.JPG)
 
 <div class="opening">
-  <p>New York-based journalist covering tech, investment, entrepreneurship, social media, and art. </p>
+  <p>New York-based journalist covering entrepreneurship, technology, economy, finance and (occasionally) art. </p>
 </div>
 
 <div class="works">
