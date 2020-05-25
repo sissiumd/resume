@@ -1,9 +1,11 @@
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-<div class="opening">
-  SISSI CAO
-</div>  
+  
 ![bio](./bio.JPG)
+
+<div class="opening authorname">
+  SISSI CAO
+</div>
 
 <div class="opening">
   <p>New York-based journalist covering entrepreneurship, technology, economy, finance and (occasionally) art. </p>
@@ -63,6 +65,10 @@
     top: 275px;
   }
   
+  .authorname {
+    font-size: 20px;
+    font-weight: 200;
+ } 
   .opening p{
   color: #333333;
   }
